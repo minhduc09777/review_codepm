@@ -1,0 +1,270 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5B03F5C8-8705-4FEE-8C8D-AFB92AADAC0A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>WindowsFormsApp1</RootNamespace>
+    <AssemblyName>WindowsFormsApp1</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Logo_chinh2.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Accord, Version=3.8.0.0, Culture=neutral, PublicKeyToken=fa1a88e29555ccf7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Accord.dll</HintPath>
+    </Reference>
+    <Reference Include="Accord.Video, Version=3.8.0.0, Culture=neutral, PublicKeyToken=fa1a88e29555ccf7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Accord.Video.dll</HintPath>
+    </Reference>
+    <Reference Include="Accord.Video.FFMPEG, Version=3.8.0.0, Culture=neutral, PublicKeyToken=fa1a88e29555ccf7, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Accord.Video.FFMPEG.dll</HintPath>
+    </Reference>
+    <Reference Include="FontListBox, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\FontListBox.dll</HintPath>
+    </Reference>
+    <Reference Include="Lib1, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Lib1.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.3\lib\net40\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UsbHid, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\UsbHid.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="add_layer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="add_layer.Designer.cs">
+      <DependentUpon>add_layer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="effect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="effect.Designer.cs">
+      <DependentUpon>effect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="save_haoquang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="save_haoquang.Designer.cs">
+      <DependentUpon>save_haoquang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="save_vien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="save_vien.Designer.cs">
+      <DependentUpon>save_vien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="save_wire.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="save_wire.Designer.cs">
+      <DependentUpon>save_wire.cs</DependentUpon>
+    </Compile>
+    <Compile Include="thongbao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="thongbao.Designer.cs">
+      <DependentUpon>thongbao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="thongtin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="thongtin.Designer.cs">
+      <DependentUpon>thongtin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="thuvien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="thuvien.Designer.cs">
+      <DependentUpon>thuvien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="tool.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tool.Designer.cs">
+      <DependentUpon>tool.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="add_layer.resx">
+      <DependentUpon>add_layer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="effect.resx">
+      <DependentUpon>effect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="save_haoquang.resx">
+      <DependentUpon>save_haoquang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="save_vien.resx">
+      <DependentUpon>save_vien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="save_wire.resx">
+      <DependentUpon>save_wire.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="thongbao.resx">
+      <DependentUpon>thongbao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="thongtin.resx">
+      <DependentUpon>thongtin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="thuvien.resx">
+      <DependentUpon>thuvien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tool.resx">
+      <DependentUpon>tool.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\select.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\draw.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tool.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wire.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menu1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\halo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\matrix.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\effect_1.png" />
+    <None Include="Resources\effect_2.png" />
+    <None Include="Resources\effect_3.png" />
+    <None Include="Resources\effect_4.png" />
+    <None Include="Resources\effect_5.png" />
+    <None Include="Resources\chung1.png" />
+    <None Include="Resources\effect8.png" />
+    <None Include="Resources\effect9.png" />
+    <None Include="Resources\mau.bmp" />
+    <None Include="Resources\mau1.bmp" />
+    <None Include="Resources\mauok.png" />
+    <None Include="Resources\menuhg1.bmp" />
+    <None Include="Resources\menuhq2.bmp" />
+    <None Include="Resources\halo1.png" />
+    <None Include="Resources\halo2.png" />
+    <None Include="Resources\hieung_1.bmp" />
+    <None Include="Resources\halo_2.png" />
+    <None Include="Resources\halo_3.png" />
+    <None Include="Resources\halo_4.png" />
+    <None Include="Resources\1 %281%29.png" />
+    <None Include="Resources\1 %282%29.png" />
+    <None Include="Resources\m1.png" />
+    <None Include="Resources\m3.png" />
+    <None Include="Resources\m4.png" />
+    <None Include="Resources\m5.png" />
+    <None Include="Resources\m6.png" />
+    <None Include="Resources\m7.png" />
+    <None Include="Resources\m8.png" />
+    <None Include="Resources\m9.png" />
+    <None Include="Resources\m2.png" />
+    <None Include="Resources\m10.png" />
+    <None Include="Resources\m11.png" />
+    <None Include="Resources\hu1.bmp" />
+    <None Include="Resources\hu2.bmp" />
+    <None Include="Resources\hu3.bmp" />
+    <None Include="Resources\hu4.bmp" />
+    <None Include="Resources\hu5.bmp" />
+    <None Include="Resources\hu6.bmp" />
+    <None Include="Resources\hu7.bmp" />
+    <None Include="Resources\hu8.bmp" />
+    <None Include="Resources\hu9.bmp" />
+    <None Include="Resources\hu10.bmp" />
+    <None Include="Resources\hu11.bmp" />
+    <None Include="Resources\fill.bmp" />
+    <Content Include="Logo_chinh2.ico" />
+    <Content Include="stats_pie_chart_c1m_icon.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
